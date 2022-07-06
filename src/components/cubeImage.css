@@ -1,0 +1,120 @@
+.cube-post {
+  height: 34rem;
+  display: block;
+  margin: auto;
+  background: none !important;
+  padding: 5rem 0rem 5rem 0rem;
+}
+.cube {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(-45deg);
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+.cube div {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  box-shadow: inset 0px 0px 55px rgba(0, 0, 0, 0.6);
+}
+
+.cube div.top {
+  transform: rotateX(90deg);
+  margin-top: -125px;
+}
+
+.cube div.right {
+  transform: rotateY(90deg);
+  margin-left: 125px;
+}
+
+.cube div.bottom {
+  transform: rotateX(90deg);
+  margin-top: 125px;
+}
+
+.cube div.left {
+  transform: rotateY(-90deg);
+  margin-left: -125px;
+}
+
+.cube div.front {
+  transform: translateZ(125px);
+}
+
+.cube div.back {
+  transform: translateZ(-125px);
+}
+
+@media only screen and (max-width: 768px) {
+  .caption {
+    font-size: 1rem;
+  }
+  .caption::first-letter {
+    font-size: 2rem;
+  }
+  .likes {
+    font-size: 0.9rem;
+  }
+  .cube-post {
+    height: 20rem;
+    background: none;
+    padding-top: 10rem;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  .cube {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(-45deg);
+  }
+
+  .cube div {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    box-shadow: inset 0px 0px 35px rgba(0, 0, 0, 0.6);
+  }
+
+  .cube div.top {
+    transform: rotateX(90deg);
+    margin-top: -75px;
+  }
+
+  .cube div.right {
+    transform: rotateY(90deg);
+    margin-left: 75px;
+  }
+
+  .cube div.bottom {
+    transform: rotateX(90deg);
+    margin-top: 75px;
+  }
+
+  .cube div.left {
+    transform: rotateY(-90deg);
+    margin-left: -75px;
+  }
+
+  .cube div.front {
+    transform: translateZ(75px);
+  }
+
+  .cube div.back {
+    transform: translateZ(-75px);
+  }
+}
+
+.person-tag {
+  color: var(--tag-color);
+}
