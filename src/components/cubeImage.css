@@ -65,7 +65,7 @@ img {
   .cube-post {
     height: 20rem;
     background: none;
-    padding-top: 10rem;
+    padding-top: 4rem !important;
   }
   img {
     width: 150px;
