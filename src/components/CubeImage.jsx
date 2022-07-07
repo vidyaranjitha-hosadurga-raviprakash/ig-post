@@ -42,6 +42,7 @@ export const CubeImage = () => {
             className="cube"
             ref={cubeRef}
             onMouseMove={(e) => rotateCube(e)}
+            // onTouchMove{(e) => rotateCube(e)}
           >
             {cubeSides.map(({ name, img }, index) => {
               return (
